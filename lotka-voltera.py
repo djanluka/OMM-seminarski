@@ -2,10 +2,10 @@ from numpy import *
 import pylab as p
 
 # parametri 
-a = 0.5 # natalitet algi
-b = 0.5
-c = 0.5 # mortalitet toksina
-d = 0.2
+a = 0.8 # natalitet algi
+b = 0.6
+c = 0.2 # mortalitet toksina
+d = 0.3
 
 #dx/dt = a*x - b*x*y
 #dy/dt = -c*y + d*x*y
@@ -37,5 +37,5 @@ p.legend(loc='upper right')
 p.xlabel('time')
 p.ylabel('population')
 p.title(f'a: {a}, b: {b}, c: {c}, d: {d}')
-f1.savefig('./plots/dDec.png')
+f1.savefig('./plots/model2.png')
 p.show()
