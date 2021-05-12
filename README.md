@@ -51,7 +51,7 @@ Kada smanjimo mortalitet toksina, oni duže žive i utiču na smrtnost algi. Zbo
 ***
 <h3> d </h3> 
 
-Kada povećamo nastajanje toksina, vidimo kako plava linija prelazi granicu 3, a setimo se da je na početku bila oko 2.
+Kada povećamo nastajanje toksina, vidimo kako plava linija prelazi granicu 3, a setimo se da je na početku bila oko 2. Sa većim brojem toksina i njihovim uticajem, smanjuje se populacija algi. Kako se populacija algi smanjuje, toksini nemaju kako da nastanu. Zato u trenutku kada alge dostignu minimum, počinje nagli pad populacije toksina.
 
 ![plot](./plots/dIn.png)
 
