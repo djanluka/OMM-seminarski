@@ -11,7 +11,7 @@ d - stopa nastajanje toksina u zavisnosti od vrste <br>
 
 ***
 <h3> Početni model </h3> 
-Za početne parametre uzete su jednake vrednosti koje mi aproksimiraju neku zlatnu sredinu. Ovo je osnovni model na kom možemo videti kako se kroz vreme menjaju populacije algi i toksina. Početne vrednosti za alge i toksine su redom 2 i 1 (možemo ih posmatrati u hiljadama jedinki) i to samo znači da u početnom trenutku imamo dva puta više algi nego toksina. Na modelu možemo videti (time=10) kako se prilikom povećanja populacije postepeno povećava broj toksina do tačke optimuma (time=~12) kada zbog uticaja toksina počinje polako da opada populacija algi, a ubrzo nakon toga (time=~15) počinje i opadanje toksina jer se smanjuje broj algi od kojih oni zavise. Ovo je kružni proces koji traje kroz vreme.
+Za početne parametre uzete su jednake vrednosti koje aproksimiraju neku zlatnu sredinu. Ovo je osnovni model na kom možemo videti kako se kroz vreme menjaju populacije algi i toksina. Početne vrednosti za alge i toksine su redom 2 i 1 (možemo ih posmatrati u hiljadama jedinki) i to samo znači da u početnom trenutku imamo dva puta više algi nego toksina. Na modelu možemo videti (time=10) kako se prilikom povećanja populacije postepeno povećava broj toksina do tačke optimuma populacije algi (time=~12) kada zbog uticaja toksina počinje polako da opada populacija, a ubrzo nakon toga (time=~15) počinje i opadanje toksina jer se smanjuje broj algi od kojih toksini zavise. Ovo je kružni proces kosji se ponavlja kroz vreme.
 
 ![plot](./plots/model.png "Model")
 
@@ -29,11 +29,11 @@ Kada smanjimo natalitet algi, možemo primetiti spor rast populacije algi što j
 ***
 <h3> b </h3> 
 
-Kada povećamo uticaj toksina na smrtnost algi, vidimo da crvena linija ima učestaliju frekvenciju što znači da nakon nastanka alge brzo izumiru. Zbog brzog izumiranja algi vidimo da se toksini ne mogu previše razviti.
+Kada povećamo uticaj toksina na smrtnost algi, vidimo da crvena linija ima učestaliju frekvenciju što znači da nakon nastanka alge brzo izumiru pod uticajem toksina. Zbog brzog izumiranja algi vidimo da se toksini ne mogu previše razviti.
 
 ![plot](./plots/bIn.png )
 
-Kada smanjino uticaj koje toksini imaju na smrtnost algi, to znači da će alge duže živeti. Sporu smrtnost algi možemo videti na osnovu širok levka koji pravi crvena linija. U skladu sa tim se povećava broj toksina kroz vreme jer alge duže žive i proizvode toksine.
+Kada smanjino uticaj toksina na smrtnost algi, život algi postaje duži. Nisku stopu smrtnosti algi možemo zaključiti na osnovu širokog levka koji pravi crvena linija. U skladu sa tim se povećava broj toksina kroz vreme jer alge duže žive i proizvode toksine.
 
 ![plot](./plots/bDec.png )
 
@@ -65,7 +65,7 @@ Možemo smatrati da je natalitet algi i više nego dobar (a>0.5) i da alge prozv
 
 ![plot](./plots/model1.png)
 
-U drugom modelu za natalitet imamo istu pretpostavku. Isto važi i za nastajanje toksina. Međutim, u ovom primeru imamo mnogo jači uticaj toksina na smrtnost algi (b>0.5) plus toksini sporije izumiru (c<0.5). Na osnovu ovoga, vidimo da toksini nadvladavaju nad algama.
+U drugom modelu za natalitet i nastajanje toksina imamo istu pretpostavku. Međutim, u ovom primeru imamo mnogo jači uticaj toksina na smrtnost algi (b>0.5) kao i nisku stopu izumiranja toksina(c<0.5). Na osnovu ovoga, vidimo da toksini nadvladavaju algama.
 
 ![plot](./plots/model2.png)
 
