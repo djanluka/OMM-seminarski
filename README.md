@@ -9,9 +9,13 @@ b - umanjenje vrste pod uticajem toksina <br>
 c - mortalitet toksina <br>
 d - stopa nastajanje toksina u zavisnosti od vrste <br>
 
+Stacionarne tačke: <br>
+x = 0, y = 0 <br>
+x = c/d, y = a/b
+
 ***
 <h3> Početni model </h3> 
-Za početne parametre uzete su jednake vrednosti koje aproksimiraju neku zlatnu sredinu. Ovo je osnovni model na kom možemo videti kako se kroz vreme menjaju populacije algi i toksina. Početne vrednosti za alge i toksine su redom 2 i 1 (možemo ih posmatrati u hiljadama jedinki) i to samo znači da u početnom trenutku imamo dva puta više algi nego toksina. Na modelu možemo videti (time=10) kako se prilikom povećanja populacije postepeno povećava broj toksina do tačke optimuma populacije algi (time=~12) kada zbog uticaja toksina počinje polako da opada populacija, a ubrzo nakon toga (time=~15) počinje i opadanje toksina jer se smanjuje broj algi od kojih toksini zavise. Ovo je kružni proces kosji se ponavlja kroz vreme.
+Za početne parametre uzete su jednake vrednosti koje aproksimiraju neku zlatnu sredinu. Ovo je osnovni model na kom možemo videti kako se kroz vreme menjaju populacije algi i toksina. Početne vrednosti za alge i toksine su redom 2 i 1 (možemo ih posmatrati u hiljadama jedinki) i to samo znači da u početnom trenutku imamo dva puta više algi nego toksina. Na modelu možemo videti (time=10) kako se prilikom povećanja populacije postepeno povećava broj toksina do tačke optimuma populacije algi (time=~12) kada zbog uticaja toksina počinje polako da opada populacija, a ubrzo nakon toga (time=~15) počinje i opadanje toksina jer se smanjuje broj algi od kojih toksini zavise. Ovo je kružni proces koji se ponavlja kroz vreme.
 
 ![plot](./plots/model.png "Model")
 
