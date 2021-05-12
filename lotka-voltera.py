@@ -20,9 +20,9 @@ X_f1 = array([ c/d, a/b])
 
 from scipy import integrate
 
-# time
+# vreme
 t = linspace(0, 50,  1000)
-# initials conditions:
+# pocetne tacke:
 X0 = array([2, 1])
 
 X = integrate.odeint(dX_dt, X0, t)
