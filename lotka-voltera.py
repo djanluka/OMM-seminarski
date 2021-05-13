@@ -70,14 +70,14 @@ DX1 /= M
 DY1 /= M                                  
 
 #iscrtavanje grafika
-p.title(f'Trajektorije za model: a: {a}, b: {b}, c: {c}, d: {d}')
+p.title(f'Trajectories: a: {a}, b: {b}, c: {c}, d: {d}')
 Q = p.quiver(X1, Y1, DX1, DY1, M, pivot='mid', cmap=p.cm.jet)
-p.xlabel('Populacija algi')
-p.ylabel('Populacija toksina')
+p.xlabel('Population of algae')
+p.ylabel('Population of toxins')
 p.legend()
 p.grid()
 p.xlim(0, xmax)
 p.ylim(0, ymax)
 p.show()
-f2.savefig('plots/populations.png')
+#f2.savefig('plots/populations.png')
 
