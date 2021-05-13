@@ -51,7 +51,7 @@ f2 = p.figure()
 for v, col in zip(values, vcolors): 
     X0 = v * X_f1 #startna tacka
     X = integrate.odeint( dX_dt, X0, t)
-    p.plot( X[:,0], X[:,1], lw=v, color=col, label=f'X0=({int(X0[0])}, {int(X0[1])})')
+    p.plot( X[:,0], X[:,1], lw=v, color=col, label=f'A:{int(X0[0])}, T:{int(X0[1])}')
 
 
 # definisanje mreze
@@ -72,12 +72,12 @@ DY1 /= M
 #iscrtavanje grafika
 p.title(f'Trajektorije za model: a: {a}, b: {b}, c: {c}, d: {d}')
 Q = p.quiver(X1, Y1, DX1, DY1, M, pivot='mid', cmap=p.cm.jet)
-p.xlabel('Algae population')
-p.ylabel('Toxins population')
+p.xlabel('Populacija algi')
+p.ylabel('Populacija toksina')
 p.legend()
 p.grid()
 p.xlim(0, xmax)
 p.ylim(0, ymax)
 p.show()
-#f2.savefig('plots/populations.png')
+f2.savefig('plots/populations.png')
 
