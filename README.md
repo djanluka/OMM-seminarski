@@ -73,3 +73,14 @@ U drugom modelu za natalitet i nastajanje toksina imamo istu pretpostavku. Među
 
 ![plot](./plots/model2.png)
 
+
+***
+<h3> Trajektorije populacija </h3>
+
+Za različite početne vrednosti, populacije će se drugačije razvijati. Grafik sa trajektorijama pokazuje kako se razvijaju populacije u odnosu na početne vrednosti. Možemo primetiti da za male početne vrednosti populacije vrlo brzo dostižu svoje optimume i ciklus traje dosta kratko (mali prečnik). Odnosno, mali broj algi proizvodi toksine koji utiču na njihovu smrtnost tako da alge brzo dostižu svoj maksimum i izumiru. U skladu sa tim, toksini izumiru i brzo dolaze u minimalno stanje jer algi više nema.
+
+Nasuprot tome, kod većihi početnih vrednosti, ciklus traje dosta duže (veliki prečnik). 
+Na početku imamo veliku populaciju algi koja počinje da proizvodi toksine. U međuvremenu se  alge i razmnožavaju tako da će biti potreban duži vremenski period da se proizvede velika količina toksina koja će imati uticaj na alge. U trenutku kada toksini nadjačaju alge, počinje proces izumiranja toksina jer algi više nema. I ovaj proces traje duže vreme jer je populacija toksina na visokom nivou.
+
+![plot](./plots/populations.png)
+
